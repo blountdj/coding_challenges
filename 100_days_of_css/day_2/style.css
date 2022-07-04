@@ -1,0 +1,158 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #47c481;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.transform {
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.line {
+  width: 100px;
+  height: 8px;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px rgb(0 0 0 / 0.3);
+}
+
+.transform-active {
+  .first {
+    -webkit-animation: first_in 0.6s;
+    animation: first_in 0.6s;
+    animation-fill-mode: forwards;
+  }
+  .second {
+    -webkit-animation: second_in 0.6s;
+    animation: second_in 0.6s;
+    animation-fill-mode: forwards;
+  }
+  .third {
+    -webkit-animation: third_in 0.6s linear;
+    animation: third_in 0.6s linear;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes first_in {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(23px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(23px) rotate(45deg);
+  }
+}
+
+.first {
+  animation: first_out 0.6s;
+}
+
+@keyframes first_out {
+  0% {
+    transform: translateY(23px) rotate(45deg);
+  }
+  50% {
+    transform: translateY(23px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+@keyframes second_in {
+  0% {
+    opacity: 100;
+  }
+  50% {
+    opacity: 100;
+  }
+  51% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.second {
+  animation: second_out 0.6s;
+}
+
+@keyframes second_out {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 100;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+@keyframes third_in {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-23px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-23px) rotate(135deg);
+  }
+}
+
+.third {
+  animation: third_out 0.6s;
+}
+
+@keyframes third_out {
+  0% {
+    transform: translateY(-23px) rotate(135deg);
+  }
+  50% {
+    transform: translateY(-23px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+.noAnimation {
+  -webkit-animation: none !important;
+  animation: none !important;
+}
