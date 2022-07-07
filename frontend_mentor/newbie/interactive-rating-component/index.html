@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Rating state start -->
+
+      <div class="main first">
+        <img class="icon star" src="./images/icon-star.svg" alt="star icon" />
+        <h1>How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="numbers">
+          <a class="circle" data-id="1">1</a>
+          <a class="circle" data-id="2">2</a>
+          <a class="circle" data-id="3">3</a>
+          <a class="circle" data-id="4">4</a>
+          <a class="circle" data-id="5">5</a>
+        </div>
+        <button class="submit">Submit</button>
+      </div>
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+      <div class="main second hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon close"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+        <img
+          class="icon thank_you"
+          src="./images/illustration-thank-you.svg"
+          alt="thank you icon"
+        />
+        <div class="you_selected">
+          You selected <span class="rating_given"></span> out of 5
+        </div>
+
+        <h1 class="">Thank you!</h1>
+        <p class="thank_you">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+      <!-- Thank you state end -->
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Darren Blount</a>.
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
