@@ -99,6 +99,11 @@ button {
   border-radius: 10px;
   padding: 10px;
   border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(155, 36%, 20%);
 }
 
 .prices {
