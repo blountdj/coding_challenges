@@ -1,0 +1,130 @@
+/* ### Primary
+
+- Very dark blue (main background): hsl(233, 47%, 7%)
+- Dark desaturated blue (card background): hsl(244, 38%, 16%)
+- Soft violet (accent): hsl(277, 64%, 61%)
+
+### Neutral
+
+- White (main heading, stats): hsl(0, 0%, 100%)
+- Slightly transparent white (main paragraph): hsla(0, 0%, 100%, 0.75)
+- Slightly transparent white (stat headings): hsla(0, 0%, 100%, 0.6)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Inter](https://fonts.google.com/specimen/Inter)
+- Weights: 400, 700
+
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400 */
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  /* font-family: 'Lexend Deca', sans-serif; */
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.component {
+  height: auto;
+  display: flex;
+  margin: 80px;
+  margin-bottom: 150px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  padding: 60px;
+  background-color: hsl(244, 38%, 16%);
+  gap: 30px;
+}
+
+h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 36px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h1 span {
+  color: hsl(277, 64%, 61%);
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.8;
+  font-family: "Lexend Deca", sans-serif;
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 3;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.stats div {
+  color: hsla(0, 0%, 100%, 0.6);
+  text-transform: uppercase;
+  font-size: 14;
+  margin-right: 16px;
+}
+
+.stats div.top {
+  color: hsla(0, 0%, 100%, 0.75);
+  text-transform: none;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.image-side {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: hsl(277, 64%, 61%);
+  opacity: 0.55;
+}
+
+img {
+  height: 460px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
