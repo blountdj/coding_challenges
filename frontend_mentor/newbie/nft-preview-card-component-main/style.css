@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+}
+
+.component {
+  background-color: hsl(216, 50%, 16%);
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0px 16px 10px 9px hsl(213, 52%, 7%);
+}
+
+.images {
+  position: relative;
+}
+
+img.nft {
+  height: 300px;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+img.nft:hover {
+  background-image: hsl(178, 100%, 50%);
+  fill: hsl(178, 100%, 50%);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: hsl(178, 100%, 50%);
+  border-radius: 14px;
+}
+
+.images:hover .overlay {
+  opacity: 0.4;
+}
+
+.eye {
+  position: absolute;
+  height: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.images:hover .eye {
+  display: inline-block;
+  opacity: 1;
+  z-index: 1;
+}
+
+h1 {
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+
+h1:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  color: hsl(178, 100%, 50%);
+  font-weight: 400;
+}
+
+span.price,
+span.time {
+  display: flex;
+  align-items: center;
+}
+
+img.details {
+  padding-right: 5px;
+  height: 20px;
+}
+
+hr {
+  border: 0 none;
+  height: 1px;
+  background-color: hsl(215, 51%, 70%);
+}
+
+div.creator {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+img.avatar {
+  height: 40px;
+  border: 1px white solid;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+span.name {
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+span.name:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+  /* background-color: yellow; */
+  /* height: 10vh; */
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
