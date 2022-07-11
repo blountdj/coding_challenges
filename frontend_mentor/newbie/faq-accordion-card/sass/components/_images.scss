@@ -1,0 +1,30 @@
+.desktop-shadow {
+  position: absolute;
+  bottom: -40%;
+  left: -98.5%;
+  height: 900px;
+}
+
+.desktop {
+  position: absolute;
+  bottom: 10%;
+  left: -5%;
+  height: 350px;
+}
+
+.box {
+  position: absolute;
+  left: -75px;
+  bottom: 190px;
+  height: 150px;
+  z-index: 1;
+}
+
+.arrow {
+  height: 1rem;
+  transition: all 0.3s;
+}
+
+.active .arrow {
+  transform: translateY(-50%) rotateX(180deg);
+}

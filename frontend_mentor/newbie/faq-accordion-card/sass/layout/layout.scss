@@ -1,0 +1,53 @@
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.outer {
+  position: relative;
+  width: 1000px;
+}
+
+.component {
+  display: flex;
+  background-color: white;
+  border-radius: 1.5rem;
+  margin: 8rem auto;
+  overflow: hidden;
+  width: 1000px;
+  gap: 2rem;
+  box-shadow: 0px 10px 35px 6px rgba(0, 0, 0, 0.4);
+}
+
+.component-images {
+  position: relative;
+  width: 50%;
+}
+
+.component-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 4rem;
+  padding-right: 7rem;
+  padding-left: 0;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid $color-light-grayish-blue;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  cursor: pointer;
+
+  &:hover h3 {
+    color: $color-soft-red;
+  }
+}

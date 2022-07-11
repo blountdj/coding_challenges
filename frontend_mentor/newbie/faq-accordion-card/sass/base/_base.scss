@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  // height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  background-image: linear-gradient(
+    to bottom,
+    $color-soft-violet,
+    $color-soft-blue
+  );
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // align-items: flex-start;
+  // height: 100vh;
+}
+
+.hidden {
+  height: 0;
+  opacity: 0;
+}
+
+.active h3 {
+  font-weight: 700;
+  color: $color-very-dark-desaturated-blue;
+}
+
+.active p {
+  height: 2rem;
+  opacity: 1;
+  margin-bottom: 3rem;
+  transition: all 0.3s;
+}

@@ -1,0 +1,138 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 2rem; }
+
+.attribution a {
+  color: #3e52a3; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  background-image: linear-gradient(to bottom, #af67e9, #6565e7);
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.hidden {
+  height: 0;
+  opacity: 0; }
+
+.active h3 {
+  font-weight: 700;
+  color: #1d1e35; }
+
+.active p {
+  height: 2rem;
+  opacity: 1;
+  margin-bottom: 3rem;
+  transition: all 0.3s; }
+
+body {
+  font-size: 1.2rem;
+  font-family: "Kumbh Sans", sans-serif; }
+
+h1 {
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem; }
+
+h3 {
+  color: #787887;
+  margin-bottom: 1rem;
+  transition: all 0.3s; }
+
+p {
+  color: #787887;
+  padding-bottom: 1.5rem;
+  transition: all 0.3s; }
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white; }
+
+.attribution a {
+  color: #3e52a3; }
+
+.desktop-shadow {
+  position: absolute;
+  bottom: -40%;
+  left: -98.5%;
+  height: 900px; }
+
+.desktop {
+  position: absolute;
+  bottom: 10%;
+  left: -5%;
+  height: 350px; }
+
+.box {
+  position: absolute;
+  left: -75px;
+  bottom: 190px;
+  height: 150px;
+  z-index: 1; }
+
+.arrow {
+  height: 1rem;
+  transition: all 0.3s; }
+
+.active .arrow {
+  transform: translateY(-50%) rotateX(180deg); }
+
+.main {
+  display: flex;
+  justify-content: center; }
+
+.outer {
+  position: relative;
+  width: 1000px; }
+
+.component {
+  display: flex;
+  background-color: white;
+  border-radius: 1.5rem;
+  margin: 8rem auto;
+  overflow: hidden;
+  width: 1000px;
+  gap: 2rem;
+  box-shadow: 0px 10px 35px 6px rgba(0, 0, 0, 0.4); }
+
+.component-images {
+  position: relative;
+  width: 50%; }
+
+.component-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 4rem;
+  padding-right: 7rem;
+  padding-left: 0; }
+
+.section {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #e7e7e9; }
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  cursor: pointer; }
+  .question:hover h3 {
+    color: #f47c57; }
