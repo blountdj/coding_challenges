@@ -1,0 +1,33 @@
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.8rem;
+  color: $colors-very-dark-desaturated-blue;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-top: 8rem;
+  font-weight: 700;
+  color: $colors-very-dark-desaturated-blue;
+}
+
+h1 span {
+  color: $colors-dark-gray;
+  padding-left: 0.25rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: $colors-dark-gray;
+  margin-bottom: 2rem;
+}
+
+hr {
+  height: 1px;
+  width: 100%;
+  background-color: $colors-dark-gray;
+  border: 0 none;
+  opacity: 0.25;
+}
