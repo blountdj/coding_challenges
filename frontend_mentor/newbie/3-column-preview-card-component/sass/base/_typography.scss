@@ -1,0 +1,53 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.components {
+  display: flex;
+  margin: 5rem auto;
+  padding: 3rem;
+  color: $color-very-light-gray;
+
+  &-1,
+  &-2,
+  &-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 4rem;
+  }
+
+  &-1 {
+    background-color: $color-bright-orange;
+    border-radius: 1rem 0 0 1rem;
+  }
+  &-2 {
+    background-color: $color-dark-cyan;
+  }
+  &-3 {
+    background-color: $color-very-dark-cyan;
+    border-radius: 0 1rem 1rem 0;
+  }
+}
+
+img {
+  height: 4rem;
+  width: 4rem;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  color: $color-transparent-white;
+  margin-bottom: 3rem;
+}
