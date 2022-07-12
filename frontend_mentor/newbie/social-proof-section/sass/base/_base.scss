@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  line-height: 1;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  font-family: "League Spartan", sans-serif;
+  @include flexColCenter;
+  position: relative;
+}
+
+.main {
+  @include flexColCenter;
+  margin: 7rem auto;
+  width: 65%;
+}
+
+.row {
+  &__top {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3rem;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+.left {
+  width: 38%;
+  margin-right: 3%;
+}
+
+.right {
+  width: 45%;
+  display: grid;
+  grid-template: 5rem 5rem 5rem / repeat(10, 10%);
+  row-gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.review {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: $colors-light-grayish-magenta;
+  border-radius: 0.7rem;
+  color: $colors-dark-magenta;
+  font-weight: 700;
+  width: auto;
+
+  &-1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: -3;
+  }
+
+  &-2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: -2;
+  }
+
+  &-3 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: -1;
+  }
+}
+
+.star {
+  padding-left: 0.7rem;
+
+  &:last-child {
+    padding-right: 3rem;
+  }
+}
